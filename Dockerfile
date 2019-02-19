@@ -4,3 +4,4 @@ RUN sed -i -re 's|http://[^/]+/(.*)|http://mirrors.aliyun.com/\1|' /etc/apk/repo
     apk add curl
 
 RUN curl -s https://gist.githubusercontent.com/zgwldrc/8830c8f8f0164cab1d6a428490bd615d/raw > ~/.bash_functions
+ENTRYPOINT ["sh", "-c"]
